@@ -10,6 +10,53 @@
         <section id="top">
             <img src="https://content.codecademy.com/courses/learn-html-forms/formAStoryLogo.svg" alt="Logo">
         </section>
-        <script src=""></script>
+
+        <section id="main">
+            <h1>Complete The Form - <br> Complete The Story!</h1>
+            <hr>
+            <form action="story.html" method="GET">
+                <label for="animal-1">Animal:</label>
+                <input type="text" id="animal-1" name="animal-1" required>
+                <br>
+                <label for="animal-2">Another Animal:</label>
+                <input type="text" id="animal-2" name="animal-2" required>
+                <br>
+                <label for="animal-3">One More Animal:</label>
+                <input type="text" id="animal-3" name="animal-3" required>
+                <br>
+                <label for="adj-1">Adjective (Past Tense):</label>
+                <input type="text" id="adj-1" name="adj-1" required>
+                <br>
+                <label for="verb-1">Verb (Ends in <b>-ing</b>):</label>
+                <input type="text" id="verb-1" name="verb-1" required>
+                <br>
+                <label for="num-1">Number:</label>
+                <input type="number" id="num-1" name="num-1" required>
+                <br>
+                <span>Yes or No:</span>
+                    <input type="radio" name="answer" id="yes" value="yes" required>
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="answer" id="no" value="no" required>
+                    <label for="no">No</label>
+                <br>
+                <label for="speed">Relative Speed:</label>
+                <select name="speed" id="speed" required>
+                    <option value="faster">Faster</option>
+                    <option value="slower">Slower</option>
+                </select>
+                <br>
+                <label for="quote">Motivational Quote:</label>
+                <input type="text" id="quote" name="quote" list="quote-choices" required>
+                <datalist id="quote-choices">
+                    <option value="winner gets ice cream!"></option>
+                </datalist>
+                <br>
+                <label for="message">Meaningful Message:</label>
+                <textarea id="message" cols="40" rows="8"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="Form My Story">
+            </form>
+        </section>
     </body>
 </html>
